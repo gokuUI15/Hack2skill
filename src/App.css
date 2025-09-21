@@ -1,0 +1,159 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #f0f4f8; 
+  color: #1a202c; 
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto; /* Add margin to top and bottom */
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px; /* Slightly larger border-radius */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* A softer, more pronounced shadow */
+}
+
+/* Typography and Headings */
+h1 {
+  text-align: center;
+  color: #3b063e;
+  margin-bottom: 25px;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  color: #000000;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/* Form Elements */
+label {
+  font-weight: 600;
+  margin-top: 20px;
+  display: block;
+  font-size: 25px;
+  color: #000000;
+}
+
+input,
+select,
+.input-group button {
+  width: 100%;
+  padding: 12px 15px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0; /* A lighter border color */
+  font-size: 16px;
+  background-color: #baa4b9; /* A slightly off-white background */
+  color: #44044278;
+  transition: all 0.2s ease-in-out;
+}
+
+input::placeholder {
+  color: #44044278;
+}
+
+input:focus,
+select:focus {
+  border-color: #000000; /* A richer purple for focus */
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+button {
+  background: #3418346e;
+  color: #000000;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  padding: 9px 17px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  flex-grow: 1; /* Allows buttons to grow to fill space */
+}
+
+button:hover {
+  background: #3c4291;
+  transform: translateY(-2px); /* Subtle lift on hover */
+}
+
+/* Skills Chips */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Increased gap for better spacing */
+  margin-top: 15px;
+}
+
+.skill-chip {
+  background: #0f22f2; /* Lighter background for the chip */
+  color: #383e9b;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.skill-chip .remove-btn {
+  background: transparent;
+  border: none;
+  color: #3c4291;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+
+/* Results Section */
+.results {
+  margin-top: 40px;
+  padding: 25px;
+  border-radius: 12px;
+  background: #f7fafc;
+  border: 1px solid #e2e8f0;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.results h3 {
+  margin-bottom: 12px;
+  color: #1a202c;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .container {
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  .button-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
